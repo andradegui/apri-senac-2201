@@ -12,15 +12,37 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="text-center">
 
-    <header>
-        <article>
-            <h1>Ola mundo</h1>
-            <p>Nome Autor</p>
-        </article>
-    </header>
-    
+    <label class="mt-2" for="">Número</label>
+    <div >        
+        <input type="number" step="2" max="10" id="num">
+    </div>
+
+    <label class="mt-2" for="">Range</label>
+    <div >        
+        <input type="range" step="2" min="1" value="5" id="ram">
+    </div>
+
+    <label class="mt-2" for="">Data</label>
+    <div>        
+        <input type="time">        
+    </div>
+
+    <label class="mt-2" for="">Cor</label>
+    <div>        
+        <input type="color">        
+    </div>
+
+    <button type="button" class="btn btn-primary mt-4" id="inputTime" onclick="">Ver Valor</button>
+
+    <script>
+        function printValue(elementId){
+            let inputValue = document.getElementById(elementId).value;
+            
+            console.log(elementId, inputValue);
+        }
+    </script>
 </body>
 
 </html>
