@@ -1,0 +1,13 @@
+td{
+    width: 100px;
+    height: 100px;
+}
+
+.vertical{
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.horizontal{
+    border-bottom: 2px solid #000;
+}
