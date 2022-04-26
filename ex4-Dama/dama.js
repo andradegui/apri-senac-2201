@@ -16,4 +16,9 @@ function drop(event) {
   let element = document.getElementById(elementID);
   let clone = element.cloneNode();
   event.target.appendChild(clone);
+
+  if (clone == clone) {
+    let clone = event.dataTransfer.clearData();
+    return clone;
+  }
 }
