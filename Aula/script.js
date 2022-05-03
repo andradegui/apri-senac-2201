@@ -1,6 +1,8 @@
 function getLocation(){
     if("geolocation" in navigator){
-        navigator.geolocation.getCurrentPosition(locationSucess, locationError)
+
+                            //watchPosition
+        navigator.geolocation.watchPosition(locationSucess, locationError)
     }
     else{
         alert("Não existe API de Geolocalização");
@@ -13,6 +15,8 @@ function locationSucess(data){
 
     document.getElementById("latitude").innerHTML = latitude;
     document.getElementById("longitude").innerHTML = longitude;
+
+    console.log(latitude,longitude);
 }
 
 function locationError(data){
