@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios Canvas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <main>
+        <section class="">
+            <h3 class="display-5">Canvas</h3>
+            <canvas id="canvas" width="820" height="700"></canvas>
+        </section>
+    </main>
+
+    <script>
+        var canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+        const ctx2 = canvas.getContext("2d");
+        const ctx3 = canvas.getContext("2d");
+        const ctx4 = canvas.getContext("2d");
+        const ctx5 = canvas.getContext("2d");
+
+        // Como fazer quadrados
+        ctx.fillStyle = 'rgb(255, 0, 0)';
+        ctx.fillRect(275, 20, 200, 100);
+
+        ctx5.fillStyle = 'rgb(0, 0, 0)';
+        ctx5.fillRect(300, 20, 150, 100);        
+
+        ctx2.fillStyle = 'rgb(255, 0, 0)';
+        ctx2.fillRect(175, 100, 400, 100);        
+        
+        ctx3.fillStyle = 'rgb(0, 0, 0)';
+        ctx3.arc(300, 200, 50, 0, Math.PI * 2, false);
+        ctx3.fill();
+
+        ctx4.fillStyle = 'rgb(0, 0, 0)';
+        ctx4.arc(460, 200, 50, 0, Math.PI * 2, false);
+        ctx4.fill();
+    </script>
+
+
+</body>
+
+</html>
